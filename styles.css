@@ -1,0 +1,92 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkblue: hsl(249, 10%, 26%);
+    --grayishblue: hsl(246, 25%, 77%);
+    --white: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    /*outline: 1px dashed red;*/
+  }
+
+body {
+    background-image: url("./images/bg-intro-mobile.png");
+    background-color: var(--red);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    padding: 50px 20px;
+    max-width: 375px;
+}
+
+.section {
+    width: 375px
+}
+
+.trial {
+    background: var(--blue);
+    padding: 15px 50px;
+    border-radius: 10px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+    margin: 50px 0 20px;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.trial span {
+    font-weight: 600;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+}
+
+.input-form input, .submit {
+    height: 3rem;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid var(--grayishblue);
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+.submit {
+    background: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.terms-and-services {
+    color: var(--grayishblue);
+    font-size: 0.6rem;
+    font-weight: 500;
+    /*width: 75%;*/
+    margin: 0;
+    padding: 10px 35px;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.terms-and-services span {
+    color: var(--red);
+    font-weight: 700;
+}
